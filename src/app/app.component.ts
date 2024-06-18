@@ -8,35 +8,35 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'interactive-world-map';
 
-  selectedSvgId: string = "";
-  selectedCapital: string = "";
-  selectedRegion: string = "";
-  selectedIncomeLevel: string = "";
-  selectedLatitude: string = "";
-  selectedLongitude: string = "";
+  currentSvgId: string = "";
+  currentCapital: string = "";
+  currentRegion: string = "";
+  currentIncomeLevel: string = "";
+  currentLatitude: string = "";
+  currentLongitude: string = "";
 
-onSvgIdSelected(svgId: string) {
-  this.selectedSvgId = svgId;
+onSvgIdCurrent(svgId: string) {
+  this.currentSvgId = svgId;
 }
 
-onCapitalSelected(capital: string) {
-  this.selectedCapital = capital;
+onCapitalCurrent(capital: string) {
+  this.currentCapital = capital;
 }
 
-onRegionSelected(region: string) {
-  this.selectedRegion = region;
+onRegionCurrent(region: string) {
+  this.currentRegion = region;
 }
 
-onIncomeSelected(income: string) {
-  this.selectedIncomeLevel = income;
+onIncomeCurrent(income: string) {
+  this.currentIncomeLevel = income;
 }
 
-onLatitudeSelected(latitude: string) {
-  this.selectedLatitude = latitude;
+onLatitudeCurrent(latitude: string) {
+  this.currentLatitude = latitude;
 }
 
-onLongitudeSelected(longitude: string) {
-  this.selectedLongitude = longitude;
+onLongitudeCurrent(longitude: string) {
+  this.currentLongitude = longitude;
 }
 
 }

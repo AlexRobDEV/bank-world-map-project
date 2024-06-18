@@ -5,23 +5,23 @@
   <div class="flex flex-row justify-between">
     <div id="left-column" class="flex-1 p-2">
       <app-world-map
-        (svgIdSelected)="selectedSvgId = $event"
-        (capitalSelected)="selectedCapital = $event"
-        (regionSelected)="selectedRegion = $event"
-        (incomeLevelSelected)="selectedIncomeLevel = $event"
-        (latitudeSelected)="selectedLatitude = $event"
-        (longitudeSelected)="selectedLongitude = $event"
+        (svgIdCurrent)="currentSvgId = $event"
+        (capitalCurrent)="currentCapital = $event"
+        (regionCurrent)="currentRegion = $event"
+        (incomeLevelCurrent)="currentIncomeLevel = $event"
+        (latitudeCurrent)="currentLatitude = $event"
+        (longitudeCurrent)="currentLongitude = $event"
       ></app-world-map>
     </div>
 
     <div id="right-column" class="flex-1 p-2">
       <app-country-info
-        [countryId]="selectedSvgId"
-        [countryCapital]="selectedCapital"
-        [countryRegion]="selectedRegion"
-        [countryIncomeLevel]="selectedIncomeLevel"
-        [countryLatitude]="selectedLatitude"
-        [countryLongitude]="selectedLongitude"
+        [countryId]="currentSvgId"
+        [countryCapital]="currentCapital"
+        [countryRegion]="currentRegion"
+        [countryIncomeLevel]="currentIncomeLevel"
+        [countryLatitude]="currentLatitude"
+        [countryLongitude]="currentLongitude"
       ></app-country-info>
     </div>
   </div>
